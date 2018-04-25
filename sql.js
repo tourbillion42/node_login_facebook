@@ -149,23 +149,3 @@ app.post('/auth/register', function(req, res){
   });
 });
 
-app.get('/auth/register', function(req, res){
-  var output = `
-  <h1>Register</h1>
-  <form action="/auth/register" method="post">
-    <p>
-      <input type="text" name="username" placeholder="username">
-    </p>
-    <p>
-      <input type="text" name="password" placeholder="password">
-    </p>
-    <p>
-      <input type="text" name="displayName" placeholder="displayName">
-    </p>
-    <p>
-      <input type="submit" value="SEND">
-    </p>
-  </form>
-  `
-  res.send(output);
-});
